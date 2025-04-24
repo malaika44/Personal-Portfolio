@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Malaika | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://api.fontshare.com/v2/css?f[]=clash-display@400,500,600,700&f[]=satoshi@400,500,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="cursor-outer"></div>
+    <div class="cursor-inner"></div>
+
+    <!-- Header Navigation -->
+    <header class="header">
+        <nav class="navbar">
+            <button class="hamburger-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="#hero" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#resume" class="nav-link">Resume</a></li>
+                <li><a href="#contact" class="nav-link">Get in Touch</a></li>
+            </ul>
+        </nav>
+        <div class="logo">
+            <a href="#hero">MalaikaX</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <canvas id="particleCanvas"></canvas>
+        <div class="hero-content">
+            <h1 class="morph-text">I am Malaika</h1>
+            <p class="hero-subtitle">Turning ideas into interactive experiences</p>
+            <div class="cta-container">
+                <button class="magnetic-button primary-btn">View Projects</button>
+                <button class="magnetic-button secondary-btn">Contact Me</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="about-container">
+            <div class="about-content glass-card">
+                <h2>About Me</h2>
+                <p class="about-text">Hi there! I'm Malaika Maheen, a passionate Frontend Developer and UI/UX Designer with a flair for creating visually stunning and user-friendly web experiences. With expertise in HTML, CSS, and JavaScript, I transform complex design challenges into elegant, intuitive solutions that captivate users and drive engagement.</p>
+                <p class="about-text">My approach combines technical precision with creative innovation, specializing in responsive design and seamless API integrations. I stay at the forefront of modern web technologies, constantly expanding my skillset to deliver cutting-edge solutions that exceed client expectations. Whether it's crafting pixel-perfect interfaces or optimizing user journeys, I bring dedication and enthusiasm to every project.</p>
+                <div class="about-highlights">
+                    <div class="highlight-item">
+                        <span class="highlight-number" data-value="1.5">0</span>
+                        <span class="highlight-label">Years Experience</span>
+                    </div>
+                    <div class="highlight-item">
+                        <span class="highlight-number" data-value="5">0</span>
+                        <span class="highlight-label">Projects Completed</span>
+                    </div>
+                    <div class="highlight-item">
+                        <span class="highlight-number" data-value="100">0</span>
+                        <span class="highlight-label">Client Satisfaction</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <h2>Skills & Expertise</h2>
+        <div class="skills-container">
+            <div class="skill-cube-wrapper">
+                <div class="skill-cube">
+                    <div class="cube-face front">Frontend</div>
+                    <div class="cube-face back">Backend</div>
+                    <div class="cube-face right">Design</div>
+                    <div class="cube-face left">DevOps</div>
+                    <div class="cube-face top">Mobile</div>
+                    <div class="cube-face bottom">Database</div>
+                </div>
+            </div>
+            <div class="skill-bars">
+                <div class="skill-bar">
+                    <div class="skill-info">
+                        <span>JavaScript</span>
+                        <span>90%</span>
+                    </div>
+                    <div class="progress-line" data-percent="90"></div>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-info">
+                        <span>HTML/CSS</span>
+                        <span>85%</span>
+                    </div>
+                    <div class="progress-line" data-percent="85"></div>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-info">
+                        <span>React</span>
+                        <span>80%</span>
+                    </div>
+                    <div class="progress-line" data-percent="80"></div>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-info">
+                        <span>Data Entry</span>
+                        <span>90%</span>
+                    </div>
+                    <div class="progress-line" data-percent="90"></div>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-info">
+                        <span>AI Image Generation</span>
+                        <span>95%</span>
+                    </div>
+                    <div class="progress-line" data-percent="95"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <h2>Featured Projects</h2>
+        <div class="project-filters">
+            <button class="filter-btn active" data-filter="project1">Project1</button>
+            <button class="filter-btn" data-filter="project2">Chronox Elite</button>
+            <button class="filter-btn" data-filter="project3">Project3</button>
+        </div>
+        <div class="projects-grid">
+            <div class="project-card" data-category="project1">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="assets/images/digital-agency.svg" alt="Digital Agency Project">
+                        <h3>Digital Agency Project</h3>
+                    </div>
+                    <div class="card-back">
+                        <h3>Digital Agency Website</h3>
+                        <p>A modern digital agency website built with HTML, CSS, and JavaScript. Features responsive design, smooth animations, and API integration for dynamic content delivery.</p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">API</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://growthxdigitalagency.netlify.app" target="_blank" class="demo-link">Live Demo</a>
+                            <a href="#" class="github-link">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card" data-category="project2">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="assets/images/chronox-watch.svg" alt="Chronox Elite">
+                        <h3>Chronox Elite</h3>
+                    </div>
+                    <div class="card-back">
+                        <h3>Chronox Elite</h3>
+                        <p>A sleek and modern watch website showcasing the Chronox Elite model. Built with HTML, CSS, and JavaScript for a premium user experience.</p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://chronoxelite.netlify.app" target="_blank" class="demo-link">Live Demo</a>
+                            <a href="#" class="github-link">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- More project cards will be added dynamically -->
+        </div>
+    </section>
+
+    <!-- Resume Section -->
+    <section id="resume" class="resume">
+        <h2>Resume</h2>
+        <div class="resume-container glass-card">
+            <p class="resume-description">Explore my experience and skills. Download my resume to learn more about my professional journey.</p>
+            
+            <div class="personal-details">
+                <div class="detail-item">
+                    <span class="detail-label">Name:</span>
+                    <span class="detail-value">Malaika Maheen</span>
+                </div>
+                <div class="detail-item">
+                    <span class="detail-label">Email:</span>
+                    <span class="detail-value">malaikamaheen630@gmail.com</span>
+                </div>
+                <div class="detail-item">
+                    <span class="detail-label">LinkedIn:</span>
+                    <span class="detail-value"><a href="https://www.linkedin.com/in/malaika-maheen" target="_blank" class="link-hover">Malaika Maheen</a></span>
+                </div>
+                <div class="detail-item">
+                    <span class="detail-label">Education:</span>
+                    <div class="education-details">
+                        <div class="education-item">
+                            <span class="degree">ICS (Intermediate in Computer Science) (2019 - 2021)</span>
+                            <span class="institution">Mehran Degree College</span>
+                        </div>
+                        <div class="education-item">
+                            <span class="degree">BSIT (Bachelor of Science in Information Technology) (Expected 2025)</span>
+                            <span class="institution">Virtual University of Pakistan</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="detail-item">
+                    <span class="detail-label">Skills:</span>
+                    <div class="skills-details">
+                        <span class="skill-category">Frontend Development:</span>
+                        <span class="skill-value">HTML, CSS, JavaScript, API Integration</span>
+                        <span class="skill-category">UI/UX Design:</span>
+                        <span class="skill-value">User Interface Design, User Experience Design</span>
+                        <span class="skill-category">Data Entry & Virtual Assistance:</span>
+                        <span class="skill-value">Data Management, Administrative Support</span>
+                        <span class="skill-category">AI Image Generation:</span>
+                        <span class="skill-value">AI Tools, Creative Design</span>
+                    </div>
+                </div>
+                <div class="detail-item">
+                    <span class="detail-label">Experience:</span>
+                    <div class="experience-details">
+                        <div class="experience-item">
+                            <span class="position">Freelance Data Entry Specialist (2024 - Present)</span>
+                            <ul class="responsibilities">
+                                <li>Managed and organized large datasets with high accuracy</li>
+                                <li>Provided virtual assistance and administrative support to clients</li>
+                            </ul>
+                        </div>
+                        <div class="experience-item">
+                            <span class="position">Frontend Developer (Freelance) (2024 - Present)</span>
+                            <ul class="responsibilities">
+                                <li>Designed and developed visually appealing websites</li>
+                                <li>Ensured responsive and user-friendly web interfaces</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="detail-item">
+                    <span class="detail-label">Projects:</span>
+                    <div class="projects-details">
+                        <div class="project-item">
+                            <span class="project-name">GrowthX - Digital Agency Website</span>
+                            <span class="project-tech">(HTML, CSS, JavaScript, API)</span>
+                        </div>
+                        <div class="project-item">
+                            <span class="project-name">Portfolio Website</span>
+                            <span class="project-tech">Responsive personal portfolio showcasing skills and projects</span>
+                        </div>
+                        <div class="project-item">
+                            <span class="project-name">Eloan Application and Verification System</span>
+                            <span class="project-tech">Final Year Project</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="detail-item">
+                    <span class="detail-label">Languages:</span>
+                    <div class="languages-details">
+                        <div class="language-item">
+                            <span class="language">English</span>
+                            <span class="proficiency">(Intermediate)</span>
+                        </div>
+                        <div class="language-item">
+                            <span class="language">Urdu</span>
+                            <span class="proficiency">(Fluent)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <a href="resume.pdf" download="Malaika_Maheen_Resume.pdf" class="download-btn magnetic-button">
+                <span>Download My Resume</span>
+                <svg class="download-icon" viewBox="0 0 24 24">
+                    <path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/>
+                </svg>
+            </a>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Get In Touch</h2>
+        <div class="contact-container">
+            <form id="contactForm" class="contact-form">
+                <div class="form-group">
+                    <input type="text" id="name" name="name" required>
+                    <label for="name">Name</label>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" name="email" required>
+                    <label for="email">Email</label>
+                    <span class="validation-icon"></span>
+                </div>
+                <div class="form-group">
+                    <textarea id="message" name="message" maxlength="300" required></textarea>
+                    <label for="message">Message</label>
+                    <div class="char-counter">300</div>
+                </div>
+                <button type="submit" class="submit-btn">Send Message ➔</button>
+            </form>
+            <div id="popup" class="popup">
+                <div class="popup-content">
+                    <div class="checkmark-circle">
+                        <div class="checkmark"></div>
+                    </div>
+                    <p>Thank you! I'll respond within 24 hours.</p>
+                    <button class="close-btn">Close</button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Theme Toggle -->
+    <button id="theme-toggle" class="theme-toggle">
+        <svg class="sun-icon" viewBox="0 0 24 24">
+            <path d="M12 17c-2.76 0-5 2.24-5 5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.65 0-3 1.35-3 3s1.35 3 3 3 3-1.35 3-3-1.35-3-3-3z"/>
+            <path d="M12 1v2m0 18v2M4.22 4.22l1.42 1.42m12.72 12.72l1.42 1.42M1 12h2m18 0h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/>
+        </svg>
+        <svg class="moon-icon" viewBox="0 0 24 24">
+            <path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z"/>
+        </svg>
+    </button>
+
+    <script src="app.js"></script>
+    <footer class="footer">
+        <div class="footer-content">
+            <p class="copyright">&copy; 2025 MalaikaX. All rights reserved.</p>
+            <div class="social-links">
+                <a href="https://github.com/malaikax" target="_blank" class="social-link" aria-label="GitHub">
+                    <svg class="social-icon" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                </a>
+                <a href="https://www.linkedin.com/in/malaika-maheen" target="_blank" class="social-link" aria-label="LinkedIn">
+                    <svg class="social-icon" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                </a>
+                <a href="mailto:malaikamaheen630@gmail.com" class="social-link" aria-label="Email">
+                    <svg class="social-icon" viewBox="0 0 24 24"><path d="M0 3v18h24v-18h-24zm21.518 2l-9.518 7.713-9.518-7.713h19.036zm-19.518 14v-11.817l10 8.104 10-8.104v11.817h-20z"/></svg>
+                </a>
+                <a href="https://wa.me/+923172201370" target="_blank" class="social-link" aria-label="WhatsApp">
+                    <svg class="social-icon" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+                </a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
